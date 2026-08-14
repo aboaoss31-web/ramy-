@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>رَمْي 🏹</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      color: #222;
+      text-align: center;
+    }
+
+    header {
+      background: #111827;
+      color: white;
+      padding: 25px 15px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+    }
+
+    header p {
+      margin: 8px 0 0;
+      color: #d1d5db;
+    }
+
+    .container {
+      max-width: 500px;
+      margin: 25px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    }
+
+    .target {
+      width: 260px;
+      height: 260px;
+      border-radius: 50%;
+      margin: 20px auto;
+      background:
+        radial-gradient(circle,
+        #111 0 12%,
+        #fff 12% 25%,
+        #2563eb 25% 40%,
+        #fff 40% 55%,
+        #ef4444 55% 70%,
+        #fff 70% 82%,
+        #22c55e 82% 100%);
+      border: 5px solid #222;
+    }
+
+    button {
+      width: 100%;
+      padding: 15px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 12px;
+      background: #111827;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #374151;
+    }
+
+    .score {
+      font-size: 28px;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+
+    .result {
+      margin-top: 15px;
+      font-size: 18px;
+      min-height: 25px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>رَمْي 🏹</h1>
+    <p>تحدي الرماية</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+
+      <h2>🎯 الهدف</h2>
+
+      <div class="target"></div>
+
+      <div class="score">
+        النقاط: <span id="score">0</span>
+      </div>
+
+      <button onclick="shoot()">
+        🏹 ارمي السهم
+      </button>
+
+      <button onclick="resetGame()">
+        🔄 إعادة اللعبة
+      </button>
+
+      <div class="result" id="result"></div>
+
+    </div>
+  </div>
+
+  <script>
+    let score = 0;
+
+    function shoot() {
+      const points = Math.floor(Math.random() * 11);
+
+      score += points;
+
+      document.getElementById("score").textContent = score;
+
+      if (points >= 8) {
+        document.getElementById("result").textContent =
+          "🔥 إصابة قوية! +" + points + " نقاط";
+      } else if (points >= 5) {
+        document.getElementById("result").textContent =
+          "👏 إصابة جيدة! +" + points + " نقاط";
+      } else {
+        document.getElementById("result").textContent =
+          "🏹 حاول مرة ثانية! +" + points + " نقاط";
+      }
+    }
+
+    function resetGame() {
+      score = 0;
+      document.getElementById("score").textContent = score;
+      document.getElementById("result").textContent = "";
+    }
+  </script>
+
+</body>
+</html>
