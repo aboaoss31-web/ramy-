@@ -257,7 +257,7 @@ function shoot() {
     document.getElementById("score").textContent = score;
 
     document.getElementById("result").textContent =
-        
+        }
 
 
 function resetGame() {
