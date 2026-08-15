@@ -249,6 +249,25 @@ function resetGame() {
     let score = 0;
 
 function shoot() {
+    const points = Math.floor(Math.random() * 10) + 1;
+
+    score += points;
+
+    document.getElementById("score").textContent = score;
+
+    document.getElementById("result").textContent =
+        "🎯 أصبت الهدف! +" + points + " نقاط";
+}
+
+function resetGame() {
+    score = 0;
+
+    document.getElementById("score").textContent = score;
+
+    document.getElementById("result").textContent =
+        "ابدأ الرمي 🏹";
+}
+</script>
 
     const points = Math.floor(Math.random() * 10) + 1;
 
