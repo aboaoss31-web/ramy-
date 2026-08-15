@@ -258,7 +258,6 @@ function shoot() {
 
     document.getElementById("result").textContent =
         
-function shoot() {
 
     const points = Math.floor(Math.random() * 10) + 1;
 
