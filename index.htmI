@@ -257,6 +257,16 @@ function shoot() {
     document.getElementById("score").textContent = score;
 
     document.getElementById("result").textContent =
+        
+function shoot() {
+
+    const points = Math.floor(Math.random() * 10) + 1;
+
+    score += points;
+
+    document.getElementById("score").textContent = score;
+
+    document.getElementById("result").textContent =
         `🎯 أصبت الهدف وحصلت على ${points} نقاط!`;
 }
 
@@ -266,18 +276,7 @@ function resetGame() {
 
     document.getElementById("score").textContent = score;
 
-    document.getElementById("result").textContent = "";
+    document.getElementById("result").textContent =
+        "ابدأ الرمي! 🎯";
 }
-    document.getElementById("result").textContent = "";
-}
-
-</script>
-
-</body>
-</html>
-</script>
-
-</body>
-</html>
-
   
