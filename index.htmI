@@ -265,30 +265,6 @@ function resetGame() {
 
   document.getElementById("result").textContent = "";
 }
-</script>
-
-      score += points;
-
-      document.getElementById("score").textContent = score;
-
-      if (points >= 8) {
-        document.getElementById("result").textContent =
-          "🔥 إصابة قوية! +" + points + " نقاط";
-      } else if (points >= 5) {
-        document.getElementById("result").textContent =
-          "👏 إصابة جيدة! +" + points + " نقاط";
-      } else {
-        document.getElementById("result").textContent =
-          "🏹 حاول مرة ثانية! +" + points + " نقاط";
-      }
-    }
-
-    function resetGame() {
-      score = 0;
-      document.getElementById("score").textContent = score;
-      document.getElementById("result").textContent = "";
-    }
-  </script>
 
 </body>
 </html>
