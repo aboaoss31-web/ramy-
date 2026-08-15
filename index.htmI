@@ -248,7 +248,7 @@ function addScore() {
     let score = 0;
 
     function shoot() {
-      const points = Math.floor(Math.random() * 10) + 1;
+      
 const points = Math.floor(Math.random() * 10) + 1;
 
 score += points;
@@ -264,23 +264,4 @@ function resetGame() {
 
   document.getElementById("score").textContent = score;
 
-  document.getElementById("result").textContent = "";
-}
-score += points;
-
-document.getElementById("score").textContent = score;
-
-document.getElementById("result").textContent =
-  `أصبت الهدف 🎯 وحصلت على ${points} نقاط!`;
-}
-
-function resetGame() {
-  score = 0;
-
-  document.getElementById("score").textContent = score;
-
-  document.getElementById("result").textContent = "";
-}
-
-</body>
-</html>
+  
