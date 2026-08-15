@@ -276,7 +276,5 @@ function resetGame() {
 
     document.getElementById("score").textContent = score;
 
-    document.getElementById("result").textContent =
-        "ابدأ الرمي! 🎯";
-}
+   
   
