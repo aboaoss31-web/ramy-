@@ -262,6 +262,11 @@ document.getElementById("result").textContent =
 function resetGame() {
   score = 0;
 
-  document.getElementById("score").textContent = score;
+  document.getElementById("score").textContent = score;        document.getElementById("result").textContent = "";
+    }
+</script>
+
+</body>
+</html>
 
   
