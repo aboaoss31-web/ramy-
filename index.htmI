@@ -269,14 +269,6 @@ function resetGame() {
 }
 </script>
 
-    const points = Math.floor(Math.random() * 10) + 1;
-
-    score += points;
-
-    document.getElementById("score").textContent = score;
-
-    document.getElementById("result").textContent =
-        }
 
 
 function resetGame() {
