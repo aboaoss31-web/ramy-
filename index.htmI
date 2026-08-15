@@ -148,27 +148,7 @@ function addScore() {
   score++;
   document.getElementById("score").textContent = score;
 }function resetGame() {
-  score = 0;
-
-  document.getElementById("score").textContent = score;
-}
-</script>
-
-</body>
-</html>
-
-    .container {
-      max-width: 500px;
-      margin: 25px auto;
-      padding: 20px;
-    }
-
-    .card {
-      background: white;
-      border-radius: 20px;
-      padding: 25px;
-      box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-    }
+ 
 
     .target {
       width: 260px;
