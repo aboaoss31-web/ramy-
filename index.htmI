@@ -147,6 +147,10 @@ function startGame() {
 function addScore() {
   score++;
   document.getElementById("score").textContent = score;
+}function resetGame() {
+  score = 0;
+
+  document.getElementById("score").textContent = score;
 }
 </script>
 
