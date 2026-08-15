@@ -144,11 +144,15 @@ function startGame() {
   alert("بدأت الجولة 🏹");
 }
 
-function addScore() {
-  score++;
-  document.getElementById("score").textContent = score;
-}function resetGame() {
- 
+ function addScore() {
+    score++;
+    document.getElementById("score").textContent = score;
+}
+
+function resetGame() {
+    score = 0;
+    document.getElementById("score").textContent = score;
+}
 
     .target {
       width: 260px;
