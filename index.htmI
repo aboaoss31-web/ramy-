@@ -248,23 +248,26 @@ function resetGame() {
   <script>
     let score = 0;
 
-    function shoot() {
-      
-const points = Math.floor(Math.random() * 10) + 1;
+function shoot() {
 
-score += points;
+    const points = Math.floor(Math.random() * 10) + 1;
 
-document.getElementById("score").textContent = score;
+    score += points;
 
-document.getElementById("result").textContent =
-  `🎯 أصبت الهدف وحصلت على ${points} نقاط!`;
+    document.getElementById("score").textContent = score;
+
+    document.getElementById("result").textContent =
+        `🎯 أصبت الهدف وحصلت على ${points} نقاط!`;
 }
 
 function resetGame() {
-  score = 0;
 
-  document.getElementById("score").textContent = score;        document.getElementById("result").textContent = "";
-    }
+    score = 0;
+
+    document.getElementById("score").textContent = score;
+
+    document.getElementById("result").textContent = "";
+}
 </script>
 
 </body>
