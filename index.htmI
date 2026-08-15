@@ -271,7 +271,6 @@ function resetGame() {
 
 
 
-function resetGame() {
 
     score = 0;
 
