@@ -145,6 +145,19 @@ function startGame() {
 }
 
  function addScore() {
+}
+ 
+function resetGame() {
+    score = 0;
+
+    document.getElementById("score").textContent = score;
+    document.getElementById("result").textContent = "";
+}
+
+</script>
+
+</body>
+</html>
     score++;
     document.getElementById("score").textContent = score;
 }
