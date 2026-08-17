@@ -142,7 +142,9 @@ function startGame() {
   alert("بدأت الجولة 🏹");
 }
 
- function addScore() {
+function addScore() {
+    score++;
+    document.getElementById("score").textContent = score;
 }
  
 function resetGame() {
