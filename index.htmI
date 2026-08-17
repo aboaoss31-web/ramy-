@@ -79,18 +79,16 @@
         padding: 15px;
     }
 
-   button {
+  button {
     width: 100%;
     border-radius: 12px;
     font-size: 18px;
     cursor: pointer;
+}
+
 button:hover {
     opacity: 0.9;
 }
-    
-  button:hover {
-    opacity: 0.9;
-  }
 
   input {
     width: 100%;
