@@ -177,7 +177,7 @@ function resetGame() {
   border: 5px solid #222;
 }
    /* CSS هنا */
-</style>
+
    
 
     button {
@@ -191,7 +191,7 @@ function resetGame() {
       font-size: 18px;
       cursor: pointer;
     }
-
+</style>
     button:hover {
       background: #374151;
     }
