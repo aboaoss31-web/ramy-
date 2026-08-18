@@ -159,7 +159,9 @@ function resetGame() {
 </body>
 </html>
   
-    .target {
+   <style>
+   /* CSS هنا */
+</style>
       width: 260px;
       height: 260px;
       border-radius: 50%;
