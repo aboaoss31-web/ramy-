@@ -178,21 +178,7 @@ function resetGame() {
 }
    /* CSS هنا */
 </style>
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      margin: 20px auto;
-      background:
-        radial-gradient(circle,
-        #111 0 12%,
-        #fff 12% 25%,
-        #2563eb 25% 40%,
-        #fff 40% 55%,
-        #ef4444 55% 70%,
-        #fff 70% 82%,
-        #22c55e 82% 100%);
-      border: 5px solid #222;
-    }
+   
 
     button {
       width: 100%;
